@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando uma Nova APN</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #043586, #79235e, #883834);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .title-sessions {
+            color: #FF0000;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        section {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            color: #000;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .highlight {
+            background-color: #f5f5f5;
+            border-left: 5px solid #FF0000;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .steps {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-top: 15px;
+            text-align: left;
+        }
+        .apntxt {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #000;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title-sessions">Criando uma Nova APN</h1>
+    <section>
+        <p><strong>Seu aplicativo não conecta ou não gera dados?</strong> Siga os passos abaixo para configurar uma nova APN de forma simples.</p>
+        <div class="highlight">
+            <p><strong>O que é uma APN?</strong> É a configuração de acesso à rede de dados do seu dispositivo. Ajustá-la pode corrigir problemas de conexão.</p>
+        </div>
+        <div class="steps">
+            <p><strong>Passos para criar uma nova APN:</strong></p>
+            <ol>
+                <li>Acesse as configurações do seu dispositivo.</li>
+                <li>Vá para <strong>Redes</strong> ou <strong>Conexões</strong>.</li>
+                <li>Selecione <strong>Redes Móveis</strong> ou <strong>Nomes de Pontos de Acesso</strong> (APN).</li>
+                <li>Toque em <strong>Adicionar</strong> (+) para criar uma nova APN.</li>
+                <li>Preencha os campos com as seguintes informações:</li>
+            </ol>
+            <div class="highlight">
+                <p><strong>Configurações da APN da Vivo:</strong></p>
+                <p class="apntxt">
+                    Nome: MVTUNNEL<br>
+                    APN: smart.m2m.vivo.com.br<br>
+                    Proxy: Não definido<br>
+                    Porta: Não definido<br>
+                    Nome de usuário: vivo<br>
+                    Senha: vivo<br>
+                    Tipo de autenticação: CHAP<br>
+                    Protocolo APN: IPv4<br>
+                    Protocolo de roaming de APN: IPv4
+                </p>
+            </div>
+            <p>Salve as configurações e selecione esta APN como padrão. Sua conexão estará pronta para uso!</p>
+        </div>
+    </section>
+    <footer>
+        © Copyright MISTERVPN 2019 - 2024
+    </footer>
+</body>
+</html>
